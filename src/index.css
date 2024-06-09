@@ -1,0 +1,92 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #474747;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  /* outline: 0.1px dotted red; */
+}
+
+body {
+  margin: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+
+.version {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  padding: 0.8rem;
+}
+
+.datePicker {
+  display: flex;
+  justify-content: center;
+}
+
+.datePicker input {
+  height: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: #505050;
+  margin-bottom: 1rem;
+}
+
+.react-datepicker__calendar-icon {
+  font-size: 1.4rem;
+  height: fit-content;
+}
+
+.column {
+  display: flex;
+}
+
+.left-column, .middle-column, .date-heading, .time-heading {
+  width: calc(20vw);
+}
+
+.right-column {
+  width: 60vw;
+}
+
+p, label {
+  font-size: 1.3rem;
+}
+
+.filterDateSelector {
+  text-align: center;
+}
+
+.filterDateSelector label input {
+  padding-left: 1rem;
+  margin: 0 0.7rem;
+}
+
+.heading {
+  display: flex;
+}
+
+.redText {
+  color: rgb(226, 32, 32);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+}
