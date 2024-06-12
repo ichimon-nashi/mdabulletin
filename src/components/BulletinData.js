@@ -1,4 +1,9 @@
 export const bulletinData = [{
+    date:"2024-04-29",
+    time:"14:44",
+    id:"G2404-014",
+    title:"濕租B738國際線 2024年5月份影片播放資訊。",
+},{
     date:"2024-05-07",
     time:"14:17",
     id:"G2405-001",
@@ -88,5 +93,10 @@ export const bulletinData = [{
     time:"15:14",
     id:"G2406-005",
     title:"本公司「危險物品作業手冊DGOM」修訂第033版。",
+},{
+    date:"2024-06-12",
+    time:"13:21",
+    id:"G2406-006",
+    title:"座艙長報告(E-TR)重點宣導填寫範本。",
 },
 ]

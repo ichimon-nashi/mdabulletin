@@ -21,24 +21,26 @@ body {
   margin: 2rem;
 }
 
-h1 {
+/* Top Portion */
+.title {
   text-align: center;
   font-size: 5rem;
   margin: 2rem 0;
 }
 
-.version {
+.versionNo {
   font-size: 1.2rem;
   margin-left: 1rem;
   padding: 0.8rem;
 }
 
-.datePicker {
+/* Date Picker */
+.datePicker-container {
   display: flex;
   justify-content: center;
 }
 
-.datePicker input {
+.datePicker-container input {
   height: 2rem;
   text-align: center;
   font-size: 1.1rem;
@@ -51,42 +53,70 @@ h1 {
   height: fit-content;
 }
 
-.column {
-  display: flex;
-}
-
-.left-column, .middle-column, .date-heading, .time-heading {
-  width: calc(20vw);
-}
-
-.right-column {
-  width: 60vw;
-}
-
-p, label {
-  font-size: 1.3rem;
-}
-
-.filterDateSelector {
+/* Date Filter */
+.dateFilter-container {
   text-align: center;
 }
 
-.filterDateSelector label input {
+.dateFilter-container label input {
   padding-left: 1rem;
   margin: 0 0.7rem;
 }
 
-.heading {
-  display: flex;
+.dateRange {
+  margin: 0.5rem 0;
 }
 
-.redText {
-  color: rgb(226, 32, 32);
+.highlightedText {
+  color: rgb(226, 43, 43);
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-.test {
+/* Bottom Portion */
+.bottomPortion {
+  display:flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.leftColumn {
   display: flex;
-  flex-direction: column;
+}
+
+.radioLabel {
+  font-size: 1.3rem;
+}
+
+li {
+  list-style: none;
+}
+
+.empty {
+  color: #474747;
+}
+
+.date-container, .time-container {
+  width: 13vw;
+  text-align: center;
+}
+
+.rightColumn {
+  width: 50%;
+}
+
+button {
+  padding: 0.2rem 1.5rem;
+  border-radius: 6px;
+  background-color: rgb(225, 147, 3);
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(71, 71, 221);
+  font-weight: bold;
+}
+
+button.copied {
+  background-color: green;
 }
