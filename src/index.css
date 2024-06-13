@@ -22,6 +22,11 @@ body {
 }
 
 /* Top Portion */
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   text-align: center;
   font-size: 5rem;
@@ -31,7 +36,10 @@ body {
 .versionNo {
   font-size: 1.2rem;
   margin-left: 1rem;
+  margin-bottom: 2rem;
   padding: 0.8rem;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* Date Picker */
@@ -105,11 +113,13 @@ li {
   width: 50%;
 }
 
+/* Copy button */
 button {
   padding: 0.2rem 1.5rem;
   border-radius: 6px;
   background-color: rgb(225, 147, 3);
   font-weight: bold;
+  margin-left: 1rem;
 }
 
 button:hover {
@@ -118,5 +128,56 @@ button:hover {
 }
 
 button.copied {
-  background-color: green;
+  background-color: rgb(13, 168, 104);
+}
+
+/* Media query for phone */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0.5rem;
+  }
+  .title-container {
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
+  .versionNo {
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottomPortion {
+    display:flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .date-container {
+    width: 5rem;
+  }
+  .time-container {
+    width: 3.2rem;
+  }
+  /* .bulletin-container {
+    width:6rem;
+  } */
+  .rightColumn {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  li {
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 0.2rem 0.9rem;
+    margin-left: 0.5rem;
+  }
 }

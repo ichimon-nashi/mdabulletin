@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import moment from "moment";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -38,11 +38,19 @@ function App() {
     setTextToCopy(copiedData);
   };
 
+  useEffect(() => {
+    const copiedData = document.querySelector("#copyBulletinData").innerHTML
+    .replaceAll(/(<p>|<\/p>|<\/li>)/g,"")
+    .replaceAll(/(<li>)/g,"\r\n");
+    setTextToCopy(copiedData);
+  },[subtractedDate])
+
   return (
     <>
       <section className="topPortion">
         <div className="title-container">
-          <h1 className="title">公告主旨產生器<span className="versionNo">v.1.1</span></h1>
+          <h1 className="title">公告主旨產生器</h1>
+          <small className="versionNo">v.1.2.1</small>
         </div>
         <div className="datePicker-container">
         <DatePicker 
@@ -113,8 +121,13 @@ function App() {
           <div className="bulletin-container">
             <div className="bulletinTitle-container">
               <h2>公告編號: 主旨 
-                <CopyToClipboard text={textToCopy} onClick={handleCopyButton}>
-                  <button className={copyStatus ? "copied" : ""}onClick={handleCopyButton}>{copyStatus ? "COPIED ✅" : "COPY  📋"}</button>
+                <CopyToClipboard text={textToCopy} >
+                  <button 
+                    className={copyStatus ? "copied" : ""}
+                    onClick={handleCopyButton}
+                  >
+                    {copyStatus ? "COPIED ✅" : "COPY  📋"}
+                  </button>
                 </CopyToClipboard>
               </h2>
             </div>
