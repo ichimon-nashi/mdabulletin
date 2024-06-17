@@ -113,5 +113,10 @@ export const bulletinData = [{
     time:"13:15",
     id:"G2406-009",
     title:"CCOM REV039 TR-01暫訂版簽領說明。"
+},{
+    date:"2024-06-17",
+    time:"13:20",
+    id:"G2406-010",
+    title:"CCTM REV021 TR-01暫訂版修訂重點摘要。"
 },
 ]
