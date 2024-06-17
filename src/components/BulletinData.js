@@ -108,5 +108,10 @@ export const bulletinData = [{
     time:"09:47",
     id:"G2406-008",
     title:"2024年空服科 6月份SAG會議紀錄。"
+},{
+    date:"2024-06-17",
+    time:"13:15",
+    id:"G2406-009",
+    title:"CCOM REV039 TR-01暫訂版簽領說明。"
 },
 ]
